@@ -1,0 +1,79 @@
+---
+---
+
+@import 'colors';
+
+.public-profiles {
+  margin: 20px 0;
+
+  a.profile-link {
+    margin: 0 5px;
+    color: white;
+    font-size: 24px;
+    transition: color 300ms;
+
+    &:hover {
+      color: $accent;
+    }
+  }
+}
+
+.darken {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33,33,33,0.8);
+}
+
+.section {
+  padding: 25px 0;
+  border-bottom: 1px solid #eee;
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    margin: 30px 0;
+    font-size: 200%;
+    font-family: 'klinic_slabbold'
+  }
+}
+
+.skills {
+  text-align: center;
+
+  .progress {
+     height: 40px;
+     transition: height 300ms;
+
+     &:hover {
+     }
+   }
+
+  .skill {
+    margin: 0 5px;
+
+    .swatch {
+      height: 20px;
+      width: 20px;
+      display: inline-table;
+      border-radius: 20px;
+    }
+
+    .skill-name {
+      padding: 5px;
+      bottom: 5px;
+      position: relative;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .skill {
+    width: 100%;
+    display: block;
+    text-align: left;
+    padding: 2px 0 2px 35%;
+  } 
+}

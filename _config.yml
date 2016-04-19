@@ -1,0 +1,108 @@
+# Server settings
+host: '127.0.0.1'
+sass:
+  sass_dir: _scss
+  style: compressed
+gems: [jekyll-paginate]
+
+# Global site settings
+name: John Doe
+description:
+meta_description: "Yucca theme showcase"
+
+settings:
+  header_img: '/assets/images/mountains.jpg'
+  header_color: '#fff'
+  header_img_position: '0% 90%'
+
+# Plugin settings
+markdown: redcarpet
+highlighter: rouge
+
+# Blog settings
+paginate: 20
+baseurl: /
+external_blog: true
+blog_url: '/blog'
+
+# Site settings
+domain_name: 'http://example.com'
+google_analytics: 'UA-XXXXXXXX-X'
+disqus: false
+disqus_shortname: 'disqus_shortname'
+contact: false
+typeform_url: 'https://example.typeform.com/to/xxxxxx' 
+
+# Details for the RSS feed generator
+url:            'http://example.com/blog'
+author:         'John Doe'
+authorTwitter:  'JohnDoe'
+
+permalink:       /:year/:title/
+
+# Public profiles
+profiles:
+  - site: linkedIn
+    url: 'https://www.linkedin.com/in/xxxxxxxxxxxxx'
+    icon: linkedin
+  - site: github
+    url: 'https://github.com/xxxxxxxx'
+    icon: github
+  - site: twitter
+    url: 'https://twitter.com/xxxxxxxx'
+    icon: twitter
+  - site: blog
+    url: 'http://example.com/blog'
+    icon: pencil
+
+# Skills
+skills:
+  - name: 'Web Development'
+    weight: 50
+    color: '#ECE4B7'
+    breakdown:
+      - name: 'Ruby on Rails'
+        weight: 50
+        color: '#ab234c'
+      - name: 'Typescript'
+        weight: 30
+        color: '#025D8C'
+      - name: 'Angular.js'
+        weight: 20
+        color: '#ECE4B7'
+  - name: 'Mongo DB'
+    weight: 20
+    color: '#025D8C'
+  - name: 'Java'
+    weight: 20
+    color: '#A9C947'
+  - name: 'Node.js'
+    weight: 10
+    color: '#C9E69A'
+    breakdown:
+      - name: 'Express.js'
+        weight: 40
+        color: '#ab234c'
+      - name: 'Electron'
+        weight: 60
+        color: '#025D8C'
+
+defaults:
+    -
+        scope:
+            path: "" # empty string for all files
+            type: pages
+        values:
+            layout: default
+    -
+        scope:
+            path: "" # empty string for all files
+            type: posts
+        values:
+            layout: post
+    -
+        scope:
+            path: ""
+            type: drafts
+        values:
+layout: post

@@ -1,0 +1,48 @@
+<h3>Skills</h3>
+<div class="skills">
+  <div class="progress">
+    {% for skill in site.skills %}
+        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="{{ skill.weigth }}" 
+        aria-valuemin="0" aria-valuemax="100" 
+        style="width: {{ skill.weight }}%; background-image: linear-gradient(to bottom,{{ skill.color }} 0,{{ skill.color }} 100%)" 
+        data-toggle="tooltip" data-placement="top" title="{{ skill.name }}">
+          <span class="sr-only">{{ skill.weight }}%</span>
+        </div>
+    {% endfor %}
+  </div>
+    <div class="row">
+    {% for skill in site.skills %}
+        <span class="skill">
+          <span class="swatch" style="background-color: {{ skill.color }};"></span><span class="skill-name">{{ skill.name }}</span>
+        </span>
+    {% endfor %}
+    </div>
+
+    {% for skill in site.skills %}
+			{% if skill.breakdown %}
+				<h3>{{ skill.name }}</h3>
+				<div class="progress">
+          {% for subskill in skill.breakdown %}
+				    <div class="progress-bar" role="progressbar" aria-valuenow="{{ subskill.weigth }}" aria-valuemin="0" aria-valuemax="100" 
+            style="width: {{ subskill.weight }}%;background-image: linear-gradient(to bottom,{{ subskill.color }} 0,{{ subskill.color }} 100%)" 
+            data-toggle="tooltip" data-placement="top" title="{{ subskill.name }}">
+              <span class="sr-only">{{ subskill.weight }}%</span>
+            </div>
+          {% endfor %}
+				</div>
+        <div class="row">
+        {% for subskill in skill.breakdown %}
+            <span class="skill">
+              <span class="swatch" style="background-color: {{ subskill.color }};"></span><span class="skill-name">{{ subskill.name }}</span>
+            </span>
+        {% endfor %}
+        </div>
+			{% endif %}
+    {% endfor %}
+</div>
+
+<script>
+ $(document).ready(function () {
+		$('[data-toggle="tooltip"]').tooltip();
+	});
+</script>

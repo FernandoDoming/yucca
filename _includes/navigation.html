@@ -1,0 +1,10 @@
+<nav class="main-nav">
+    {% if page.url != "/" %}
+        <a href="{{ site.baseurl }}"> <span class="arrow">←</span> Home </a>
+    {% endif %}
+
+    {% if site.external_blog %}
+        <a href="{{ site.blog_url }}">Blog </a>
+    {% endif %}
+    <a class="cta" href="{{ site.baseurl }}feed.xml">Subscribe</a>
+</nav>

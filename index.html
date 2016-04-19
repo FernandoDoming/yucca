@@ -1,0 +1,16 @@
+---
+profile: true
+---
+<div class="section">
+  {% markdown about.md %}
+</div>
+<div class="section">
+  {% include skills.html %}
+</div>
+{% if site.contact %}
+<div class="section">
+  {% include contact.html %}
+</div>
+{% endif %}
+{% include post-list.html %}
+{% include footer.html %}
