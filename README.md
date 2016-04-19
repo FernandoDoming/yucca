@@ -1,0 +1,2 @@
+# yucca
+A Jekyll theme
