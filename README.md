@@ -28,5 +28,5 @@ jekyll serve
 
 ## Screenshots
 
-![index](https://raw.githubusercontent.com/FernandoDoming/yucca/master/showcase/yucca.png)
-![post](https://raw.githubusercontent.com/FernandoDoming/yucca/master/showcase/yucca_post.png)
+![index](https://raw.githubusercontent.com/FernandoDoming/yucca/master/showcase/yucca.jpg)
+![post](https://raw.githubusercontent.com/FernandoDoming/yucca/master/showcase/yucca_post.jpg)
