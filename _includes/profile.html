@@ -1,11 +1,13 @@
 <div class="profile">
-    <div class="darken"></div>
     <section id="wrapper">
-        <header id="header">
-            <img id="avatar" class="2x" src="{{ site.baseurl }}assets/images/avatar.png"/>
-            <h1>{{ site.author }}</h1>
-            <h2>{{ site.description }}</h2>
-            {% include profiles.html %}
-        </header>
+      <div id="author-wrap">
+        <h1 id="author">{{ site.author }}</h1>
+        <h2 id="description">{{ site.description }}</h2>
+        <div class="short-border" style="width: 30%;"></div>
+      </div>
+      <header id="header">
+          <img id="avatar" class="2x" src="{{ site.baseurl }}assets/images/avatar.png"/>
+          {% include profiles.html %}
+      </header>
     </section>
 </div>

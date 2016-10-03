@@ -3,12 +3,20 @@
 
 @import 'colors';
 
+.short-border {
+  height: 4px;
+  background-color: $accent;
+  opacity: 0.8;
+  margin-left: 5px;
+  margin-top: 20px;
+}
+
 .public-profiles {
   margin: 20px 0;
 
   a.profile-link {
     margin: 0 5px;
-    color: white;
+    color: {{ site.settings.header_color }};;
     font-size: 24px;
     transition: color 300ms;
 
@@ -75,5 +83,5 @@
     display: block;
     text-align: left;
     padding: 2px 0 2px 35%;
-  } 
+  }
 }

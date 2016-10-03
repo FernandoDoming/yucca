@@ -74,55 +74,8 @@ h2 {
 	color: #bbb;
 }
 
-.profile {
-		position: relative;
-    {% if site.settings.header_img %}
-    background-image: url({{ site.settings.header_img }});
-    {% endif %}
-    {% if site.settings.header_img_position %}
-    background-position:{{ site.settings.header_img_position }};
-    {% endif %}
-    color: {{ site.settings.header_color }};
-}
-
-.profile #wrapper {
-	padding: 50px 40px 0px;
-	max-width: 600px;
-	margin: 0 auto;
-}
-
-.profile #header {
-	margin-bottom: 10px;
-	padding: 100px 0;
-	text-align: center;
-	position: relative;
-}
-
-.profile #avatar {
-	display: inline-block;
-	width: 130px;
-	height: 130px;
-	border-radius: 50%;
-  border: 3px solid white;
-}
-
-.profile h1 {
-  font-family: 'klinic_slabbook';
-  font-size: 30px;
-	letter-spacing: 0px;
-}
-
-.profile h2 {
-	font-size: 20px;
-	font-weight: 300;
-	margin-top: 10px;
-	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-style: normal;
-
-}
-
 nav.main-nav {
-	padding: 20px 20px 0;
+	padding: 20px 10px;
 
 	/*max-width: 600px;*/
 	width:100%;
@@ -130,7 +83,7 @@ nav.main-nav {
 	background: rgba(255,255,255,0);
 	margin: 0 auto;
 	text-align: right;
-	position: absolute;
+	position: relative;
 	z-index: 100;
 }
 

@@ -7,13 +7,11 @@ gems: [jekyll-paginate]
 
 # Global site settings
 name: John Doe
-description:
+description: "I take pride in what I do"
 meta_description: "Yucca theme showcase"
 
 settings:
-  header_img: '/assets/images/mountains.jpg'
-  header_color: '#fff'
-  header_img_position: '0% 90%'
+  header_color: '#696767'
 
 # Plugin settings
 markdown: redcarpet
@@ -31,7 +29,7 @@ google_analytics: 'UA-XXXXXXXX-X'
 disqus: false
 disqus_shortname: 'disqus_shortname'
 contact: false
-typeform_url: 'https://example.typeform.com/to/xxxxxx' 
+typeform_url: 'https://example.typeform.com/to/xxxxxx'
 
 # Details for the RSS feed generator
 url:            'http://example.com/blog'
