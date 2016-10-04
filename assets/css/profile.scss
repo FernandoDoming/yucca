@@ -58,3 +58,32 @@
     	font-style: normal;
     }
 }
+
+@media only screen
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+
+  .short-border {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .profile {
+
+    #wrapper {
+      margin: 20px;
+    }
+
+    #author-wrap {
+      position: inherit;
+      max-width: 100%;
+      width: 100%;
+      text-align: center;
+    }
+
+    #header {
+      right: 0;
+      padding: 40px 0;
+    }
+  }
+}
