@@ -11,6 +11,13 @@
   margin-top: 20px;
 }
 
+.flex-valign {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
 .public-profiles {
   margin: 20px 0;
 

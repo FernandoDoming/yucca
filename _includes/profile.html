@@ -1,13 +1,21 @@
 <div class="profile">
     <section id="wrapper">
-      <div id="author-wrap">
-        <h1 id="author">{{ site.author }}</h1>
-        <h2 id="description">{{ site.description }}</h2>
-        <div class="short-border" style="width: 30%;"></div>
+      <div class="row">
+        <div class="col-md-4 flex-valign">
+          <div id="author-wrap" class="reveal">
+            <h1 id="author">{{ site.author }}</h1>
+            <h2 id="description">{{ site.description }}</h2>
+            <div class="short-border" style="width: 30%;"></div>
+          </div>
+        </div>
+        <header class="col-md-4" id="header">
+            <img id="avatar" class="2x" src="{{ site.baseurl }}assets/images/avatar.png"/>
+            {% include profiles.html %}
+        </header>
+        <div id="long-description" class="col-md-4 flex-valign">
+          {{ site.long_description }}
+        </div>
+        <div class="header-background"></div>
       </div>
-      <header id="header">
-          <img id="avatar" class="2x" src="{{ site.baseurl }}assets/images/avatar.png"/>
-          {% include profiles.html %}
-      </header>
     </section>
 </div>

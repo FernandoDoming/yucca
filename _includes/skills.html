@@ -1,10 +1,10 @@
 <h3>Skills</h3>
 <div class="skills">
-  <div class="progress">
+  <div class="progress reveal">
     {% for skill in site.skills %}
-        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="{{ skill.weigth }}" 
-        aria-valuemin="0" aria-valuemax="100" 
-        style="width: {{ skill.weight }}%; background-image: linear-gradient(to bottom,{{ skill.color }} 0,{{ skill.color }} 100%)" 
+        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="{{ skill.weigth }}"
+        aria-valuemin="0" aria-valuemax="100"
+        style="width: {{ skill.weight }}%; background-image: linear-gradient(to bottom,{{ skill.color }} 0,{{ skill.color }} 100%)"
         data-toggle="tooltip" data-placement="top" title="{{ skill.name }}">
           <span class="sr-only">{{ skill.weight }}%</span>
         </div>
@@ -20,11 +20,11 @@
 
     {% for skill in site.skills %}
 			{% if skill.breakdown %}
-				<h3>{{ skill.name }}</h3>
-				<div class="progress">
+				<h3 class="reveal">{{ skill.name }}</h3>
+				<div class="progress reveal">
           {% for subskill in skill.breakdown %}
-				    <div class="progress-bar" role="progressbar" aria-valuenow="{{ subskill.weigth }}" aria-valuemin="0" aria-valuemax="100" 
-            style="width: {{ subskill.weight }}%;background-image: linear-gradient(to bottom,{{ subskill.color }} 0,{{ subskill.color }} 100%)" 
+				    <div class="progress-bar" role="progressbar" aria-valuenow="{{ subskill.weigth }}" aria-valuemin="0" aria-valuemax="100"
+            style="width: {{ subskill.weight }}%;background-image: linear-gradient(to bottom,{{ subskill.color }} 0,{{ subskill.color }} 100%)"
             data-toggle="tooltip" data-placement="top" title="{{ subskill.name }}">
               <span class="sr-only">{{ subskill.weight }}%</span>
             </div>

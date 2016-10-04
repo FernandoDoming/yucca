@@ -9,11 +9,8 @@
     color: {{ site.settings.header_color }};
 
     #author-wrap {
-      position: absolute;
-      top: 30%;
-      left: 10%;
-      padding: 10px 0;
-      max-width: 300px;
+      padding: 0 0 40px 0;
+      margin-left: 20%;
 
       #author {
         font-size: 55px;
@@ -21,19 +18,31 @@
     }
 
     #wrapper {
-    	padding: 50px 40px 0px;
+    	padding: 10px 40px 0px;
     	max-width: 100%;
-    	margin: 0 auto;
-      background-color: #ece5da;
-      margin: 10px 10px 10px 20%;
+
+      .row {
+        height: 500px;
+      }
     }
 
     #header {
-    	margin-bottom: 10px;
-    	padding: 100px 0;
+    	padding: 140px 0;
     	text-align: center;
-    	position: relative;
-      right: 10%;
+      height: 100%;
+    }
+
+    .header-background {
+      background-color: $muted;
+      margin: 0 10px 0 20%;
+      height: 100%;
+      width: auto;
+    }
+
+    #long-description {
+      padding: 5%;
+      text-align: justify;
+      font-family: 'Roboto';
     }
 
     #avatar {
@@ -72,6 +81,11 @@ and (orientation : portrait) {
 
     #wrapper {
       margin: 20px;
+      background-color: $muted;
+
+      .row {
+        height: auto;
+      }
     }
 
     #author-wrap {
@@ -79,11 +93,21 @@ and (orientation : portrait) {
       max-width: 100%;
       width: 100%;
       text-align: center;
+      padding: 0;
+      margin: 0;
     }
 
     #header {
       right: 0;
-      padding: 40px 0;
+      padding: 40px 0 0 0;
+    }
+
+    .header-background {
+      display: none;
+    }
+
+    #long-description {
+      padding: 5% 20%;
     }
   }
 }

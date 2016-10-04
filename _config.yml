@@ -8,9 +8,14 @@ gems: [jekyll-paginate]
 # Global site settings
 name: John Doe
 description: "I take pride in what I do"
+long_description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Ut voluptas pariatur, tenetur placeat exercitationem, dolorum culpa
+                  eius tempora odio impedit iusto ab, quae sequi! Accusamus aspernatur
+                  exercitationem sunt ex doloremque."
 meta_description: "Yucca theme showcase"
 
 settings:
+  reveal_animations: true
   header_color: '#696767'
 
 # Plugin settings
@@ -51,7 +56,7 @@ profiles:
     icon: twitter
   - site: blog
     url: 'http://example.com/blog'
-    icon: pencil
+    icon: edit
 
 # Skills
 skills:

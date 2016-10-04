@@ -16,7 +16,8 @@
   <link rel="stylesheet" href="{{ site.baseurl }}assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="{{ site.baseurl }}assets/css/bootstrap-theme.min.css">
   <!-- Fonts -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link rel="stylesheet" href="{{ site.baseurl }}assets/fonts/klinic/stylesheet.css">
 </head>
@@ -25,6 +26,10 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <!-- Bootsrap -->
  	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+  {% if site.settings.reveal_animations %}
+    <script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
+  {% endif %}
 
   <script src="{{ site.baseurl }}assets/js/main.js"></script>
   <script src="{{ site.baseurl }}assets/js/highlight.js"></script>
@@ -40,6 +45,13 @@
   </section>
 
  <script>hljs.initHighlightingOnLoad();</script>
+
+ {% if site.settings.reveal_animations %}
+  <script>
+    window.sr = ScrollReveal();
+    sr.reveal('.reveal');
+  </script>
+ {% endif %}
 
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
