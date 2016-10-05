@@ -30,10 +30,11 @@
             </div>
           {% endfor %}
 				</div>
-        <div class="row">
+        <div class="row reveal">
         {% for subskill in skill.breakdown %}
             <span class="skill">
-              <span class="swatch" style="background-color: {{ subskill.color }};"></span><span class="skill-name">{{ subskill.name }}</span>
+              <span class="swatch" style="background-color: {{ subskill.color }};"></span>
+              <span class="skill-name">{{ subskill.name }}</span>
             </span>
         {% endfor %}
         </div>

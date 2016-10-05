@@ -1,3 +1,9 @@
 
-$accent: #AD234B;
-$muted: #ECE5DA;
+$lightBrown: #ECE5DA;
+$darkPurple: #44344F;
+$bordeaux: #AD234B;
+
+$accent: $bordeaux;
+$accentDark: $bordeaux;
+$accentAlt: $darkPurple;
+$muted: $lightBrown;
