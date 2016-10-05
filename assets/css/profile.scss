@@ -72,9 +72,8 @@
     }
 }
 
-@media only screen
-and (max-device-width : 1024px)
-and (orientation : portrait) {
+@media all
+and (max-width : 1024px) {
 
   .short-border {
     margin-left: auto;

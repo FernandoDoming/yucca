@@ -3,6 +3,11 @@
 
 @import 'colors';
 
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .short-border {
   height: 4px;
   background-color: $accent;
