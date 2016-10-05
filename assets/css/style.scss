@@ -75,7 +75,7 @@ h2 {
 }
 
 nav.main-nav {
-	padding: 20px 10px;
+	padding: 20px 25px;
 
 	/*max-width: 600px;*/
 	width:100%;
@@ -87,7 +87,8 @@ nav.main-nav {
 	z-index: 100;
 }
 
-nav.main-nav a {
+nav.main-nav a,
+.main-link {
 	top: 8px;
 	right: 6px;
 	padding: 8px 12px;
@@ -98,10 +99,20 @@ nav.main-nav a {
 	border-radius: 3px;
 
 }
-nav.main-nav a.cta {
-	background: $accent;
+nav.main-nav a.cta,
+.main-link {
+	background-color: $accent;
 	color: #fff;
+}
+
+nav.main-nav a.cta {
 	margin-left: 12px;
+}
+
+.main-link:hover {
+	color: white;
+	text-decoration: none;
+	background-color: #841b3a;
 }
 
 #wrapper {

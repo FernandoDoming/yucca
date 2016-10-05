@@ -8,6 +8,10 @@
 		position: relative;
     color: {{ site.settings.header_color }};
 
+    .main-link {
+      font-size: 16px;
+    }
+
     #author-wrap {
       padding: 0 0 40px 0;
       margin-left: 20%;
@@ -34,7 +38,7 @@
 
     .header-background {
       background-color: $muted;
-      margin: 0 10px 0 20%;
+      margin: 0 0 0 20%;
       height: 100%;
       width: auto;
     }

@@ -1,5 +1,8 @@
 <div class="public-profiles">
   {% for profile in site.profiles %}
-    <a class="profile-link" href="{{ profile.url }}" alt="{{ profile.site }}"><i class="zmdi zmdi-{{ profile.icon }}"></i></a>
+    <a class="profile-link" href="{{ profile.url }}" alt="{{ profile.site }}"
+        data-toggle="tooltip" data-placement="bottom" title="{{ profile.site }}">
+      <i class="zmdi zmdi-{{ profile.icon }}"></i>
+    </a>
   {% endfor %}
 </div>
