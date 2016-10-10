@@ -1,10 +1,16 @@
 <nav class="main-nav">
+  <ul class="nav-ul">
     {% if page.url != "/" %}
-        <a href="{{ site.baseurl }}"> <span class="arrow">←</span> Home </a>
+      <li class="nav-li">
+        <a href="{{ site.baseurl }}" data-hover="Home"> <span class="arrow">←</span> Home </a>
+      </li>
     {% endif %}
 
     {% if site.external_blog %}
-        <a href="{{ site.blog_url }}">Blog </a>
+      <li class="nav-li">
+        <a href="{{ site.blog_url }}" data-hover="Blog">Blog </a>
+      </li>
     {% endif %}
     <a class="cta" href="{{ site.baseurl }}feed.xml">Subscribe</a>
+  </ul>
 </nav>
