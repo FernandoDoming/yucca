@@ -5,6 +5,21 @@
 		position: relative;
     color: $mutedText;
 
+    .public-profiles {
+      margin: 20px 0;
+
+      a.profile-link {
+        margin: 0 5px;
+        color: $mutedText;
+        font-size: 24px;
+        transition: color 300ms;
+
+        &:hover {
+          color: $accent;
+        }
+      }
+    }
+
     .main-link {
       font-size: 16px;
       color: #AD234B;

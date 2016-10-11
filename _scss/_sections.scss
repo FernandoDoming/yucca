@@ -1,0 +1,17 @@
+.section {
+  padding: 25px 0;
+  border-bottom: 1px solid #eee;
+
+  & > h3 {
+    position: relative;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    margin: 30px 0;
+    font-size: 200%;
+    font-family: 'klinic_slabbold'
+  }
+}
