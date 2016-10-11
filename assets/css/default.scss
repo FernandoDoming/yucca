@@ -2,6 +2,8 @@
 ---
 
 @import 'colors';
+@import 'profile';
+@import 'sections';
 
 body, html {
   max-width: 1200px;
@@ -28,7 +30,7 @@ body, html {
 
   a.profile-link {
     margin: 0 5px;
-    color: {{ site.settings.header_color }};;
+    color: $mutedText;
     font-size: 24px;
     transition: color 300ms;
 

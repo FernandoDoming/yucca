@@ -1,12 +1,9 @@
----
----
-
 @import 'colors';
 
 
 .profile {
 		position: relative;
-    color: {{ site.settings.header_color }};
+    color: $mutedText;
 
     .main-link {
       font-size: 16px;

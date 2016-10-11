@@ -1,6 +1,11 @@
 ---
 profile: true
 ---
+{% if site.greeting %}
+<div class="section">
+  {% include greeting.html %}
+</div>
+{% endif %}
 <div class="section">
   {% markdown about.md %}
 </div>
