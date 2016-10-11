@@ -1,107 +1,71 @@
-/*
-  IR_Black style (c) Vasily Mikhailitchenko <vaskas@programica.ru>
-*/
+/**
+ * GitHub Gist Theme
+ * Author : Louis Barranqueiro - https://github.com/LouisBarranqueiro
+ */
 
 .hljs {
   display: block;
+  background: white;
+  padding: 0.5em;
+  color: #333333;
   overflow-x: auto;
-  /*padding: 0.5em;*/
-  background: #272b2d;
-  color: #d0d0d0;
-  -webkit-text-size-adjust: none;
 }
 
-.hljs-shebang,
-.hljs-comment {
-  color: #777279;
-}
-
-.hljs-keyword,
-.hljs-tag,
-.tex .hljs-command,
-.hljs-request,
-.hljs-status,
-.clojure .hljs-attribute {
-  color: #ebde68;
-}
-
-.hljs-sub .hljs-keyword,
-.method,
-.hljs-list .hljs-title,
-.nginx .hljs-title {
-  color: #ffffb6;
+.hljs-comment,
+.hljs-meta {
+  color: #969896;
 }
 
 .hljs-string,
-.hljs-tag .hljs-value,
-.hljs-cdata,
-.hljs-filter .hljs-argument,
-.hljs-attr_selector,
-.apache .hljs-cbracket,
-.hljs-date,
-.coffeescript .hljs-attribute {
-  color: #c1ef65;
+.hljs-variable,
+.hljs-template-variable,
+.hljs-strong,
+.hljs-emphasis,
+.hljs-quote {
+  color: #df5000;
 }
 
-.hljs-subst {
-  color: #daefa3;
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-type {
+  color: #a71d5d;
 }
 
-.hljs-regexp {
-  color: #e9c062;
+.hljs-literal,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-attribute {
+  color: #0086b3;
+}
+
+.hljs-section,
+.hljs-name {
+  color: #63a35c;
+}
+
+.hljs-tag {
+  color: #333333;
 }
 
 .hljs-title,
-.hljs-sub .hljs-identifier,
-.hljs-pi,
-.hljs-decorator,
-.tex .hljs-special,
-.hljs-type,
-.hljs-constant,
-.smalltalk .hljs-class,
-.hljs-doctag,
-.nginx .hljs-built_in {
-  color: #c1ef65;
+.hljs-attr,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-selector-attr,
+.hljs-selector-pseudo {
+  color: #795da3;
 }
 
-.hljs-symbol,
-.ruby .hljs-symbol .hljs-string,
-.hljs-number,
-.hljs-variable,
-.vbscript,
-.hljs-literal,
-.hljs-name {
-  color: #77bcd7;
+.hljs-addition {
+  color: #55a532;
+  background-color: #eaffea;
 }
 
-.css .hljs-tag {
-  color: #96cbfe;
+.hljs-deletion {
+  color: #bd2c00;
+  background-color: #ffecec;
 }
 
-.css .hljs-rule .hljs-property,
-.css .hljs-id {
-  color: #ffffb6;
+.hljs-link {
+  text-decoration: underline;
 }
-
-.css .hljs-class {
-  color: #fff;
-}
-
-.hljs-hexcolor {
-  color: #c6c5fe;
-}
-
-.hljs-number {
-  color:#77bcd7;
-}
-
-.coffeescript .javascript,
-.javascript .xml,
-.tex .hljs-formula,
-.xml .javascript,
-.xml .vbscript,
-.xml .css,
-.xml .hljs-cdata {
-  opacity: 0.7;
-}
-

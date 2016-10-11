@@ -95,14 +95,14 @@
 }
 
 @media all
-and (max-width : 1024px) {
-
-  .short-border {
-    margin-left: auto;
-    margin-right: auto;
-  }
+and (max-width : 990px) {
 
   .profile {
+
+    .short-border {
+      margin-left: auto;
+      margin-right: auto;
+    }
 
     #wrapper {
       margin: 20px;
