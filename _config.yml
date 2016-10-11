@@ -16,7 +16,6 @@ meta_description: "Yucca theme showcase"
 
 settings:
   reveal_animations: true
-  header_color: '#696767'
 
 # Plugin settings
 markdown: redcarpet
@@ -35,6 +34,7 @@ disqus: false
 disqus_shortname: 'disqus_shortname'
 contact: false
 typeform_url: 'https://example.typeform.com/to/xxxxxx'
+greeting: true
 
 # Details for the RSS feed generator
 url:            'http://example.com/blog'
