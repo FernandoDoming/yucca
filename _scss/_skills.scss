@@ -4,9 +4,6 @@
   .progress {
      height: 40px;
      transition: height 300ms;
-
-     &:hover {
-     }
    }
 
   .skill {
@@ -23,6 +20,24 @@
       padding: 5px;
       bottom: 5px;
       position: relative;
+    }
+  }
+}
+
+#languages {
+  img.emblem {
+    width: 45px;
+    height: 45px;
+    margin: 10px;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+    transition: filter 300ms, -webkit-filter 300ms, opacity 300ms;
+    opacity: .7;
+
+    &:hover {
+      -webkit-filter: grayscale(0);
+      filter: grayscale(0);
+      opacity: 1;
     }
   }
 }

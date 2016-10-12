@@ -43,3 +43,23 @@
       {% endfor %}
   </div>
 </div>
+{% if site.languages %}
+<div id="languages" class="section">
+  <h4>I also speak all these languages</h4>
+  <div class="row">
+    {% for lang in site.languages %}
+    <img class="emblem" src="assets/images/{{ lang.icon }}" alt="{{ lang.name }}"
+         data-toggle="tooltip" data-placement="top" title="{{ lang.name }}"  data-container="body">
+    {% endfor %}
+  </div>
+  {% if site.technologies %}
+    <h4>And know about these technologies</h4>
+    <div class="row">
+      {% for tech in site.technologies %}
+      <img class="emblem" src="assets/images/{{ tech.icon }}" alt="{{ tech.name }}"
+           data-toggle="tooltip" data-placement="top" title="{{ tech.name }}" data-container="body">
+      {% endfor %}
+    </div>
+  {% endif %}
+</div>
+{% endif %}

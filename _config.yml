@@ -90,6 +90,28 @@ skills:
         weight: 60
         color: '#025D8C'
 
+languages:
+  - name: 'Ruby'
+    icon: 'langs/ruby.png'
+  - name: 'Javascript'
+    icon: 'langs/js.png'
+  - name: 'HTML5'
+    icon: 'langs/html5.png'
+  - name: 'CSS3'
+    icon: 'langs/css3.png'
+  - name: 'Java'
+    icon: 'langs/java.png'
+  - name: 'PHP'
+    icon: 'langs/php.png'
+  - name: 'Python'
+    icon: 'langs/python.png'
+
+technologies:
+  - name: 'Ruby on Rails'
+    icon: 'techs/ror.png'
+  - name: 'Node.js'
+    icon: 'techs/nodejs.png'
+
 defaults:
     -
         scope:
