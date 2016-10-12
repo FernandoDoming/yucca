@@ -2,20 +2,18 @@
 profile: true
 ---
 {% if site.greeting %}
-<div class="section">
   {% include greeting.html %}
-</div>
 {% endif %}
+
 <div class="section">
   {% markdown about.md %}
 </div>
-<div class="section">
-  {% include skills.html %}
-</div>
+
+{% include skills.html %}
+
 {% if site.contact %}
-<div class="section">
   {% include contact.html %}
-</div>
 {% endif %}
+
 {% include post-list.html %}
 {% include footer.html %}
