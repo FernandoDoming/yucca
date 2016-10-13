@@ -25,9 +25,12 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <!-- Bootsrap -->
  	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-
+  <!-- JS libs -->
   {% if site.settings.reveal_animations %}
     <script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
+  {% endif %}
+  {% if site.settings.typing_animations.enable %}
+    <script src="/assets/js/typed.min.js"></script>
   {% endif %}
 
   <script src="{{ site.baseurl }}assets/js/main.js"></script>
@@ -49,6 +52,22 @@
   <script>
     window.sr = ScrollReveal();
     sr.reveal('.reveal');
+  </script>
+ {% endif %}
+
+ {% if site.settings.typing_animations.enable %}
+  <script>
+    $('.typed').typed({
+      startDelay: 500,
+      loop: true,
+      shuffle: true,
+      backDelay: 1000,
+      strings: [
+      {% for str in site.settings.typing_animations.strings %}
+        "{{ str }}",
+      {% endfor %}
+      ]
+    });
   </script>
  {% endif %}
 

@@ -16,6 +16,13 @@ meta_description: "Yucca theme showcase"
 
 settings:
   reveal_animations: true
+  typing_animations:
+    enable: true
+    strings:
+      - 'I am a web developer'
+      - 'I am a UI designer'
+      - 'I am a UX designer'
+      - 'I take pride in what I do'
 
 # Plugin settings
 markdown: redcarpet
