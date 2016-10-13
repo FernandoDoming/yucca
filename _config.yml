@@ -7,7 +7,7 @@ gems: [jekyll-paginate]
 
 # Global site settings
 name: John Doe
-description: "I take pride in what I do"
+description: "I <b>take pride</b> in what I do"
 long_description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Ut voluptas pariatur, tenetur placeat exercitationem, dolorum culpa
                   eius tempora odio impedit iusto ab, quae sequi! Accusamus aspernatur
@@ -19,10 +19,10 @@ settings:
   typing_animations:
     enable: true
     strings:
-      - 'I am a web developer'
-      - 'I am a UI designer'
-      - 'I am a UX designer'
-      - 'I take pride in what I do'
+      - 'I am a <b>web developer</b>'
+      - 'I am a <b>UI designer</b>'
+      - 'I am a <b>UX designer</b>'
+      - 'I <b>take pride</b> in what I do'
 
 # Plugin settings
 markdown: redcarpet
