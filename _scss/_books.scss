@@ -1,29 +1,26 @@
 .books {
-  .book-wrap {
+  figure.book {
+    width: 26.5%;
+    position: relative;
     display: inline-block;
-    margin-bottom: 25px;
+    margin: 0 3% 25px 3%;
 
-    figure.book {
-      height: 200px;
-      position: relative;
-
-      &:hover {
-        .read {
-          height: 10px;
-        }
-      }
-
-      img {
-        height: 100%;
-      }
-
+    &:hover {
       .read {
-        height: 5px;
-        background-color: $accent;
-        position: absolute;
-        bottom: 0;
-        transition: 300ms height;
+        height: 10px;
       }
+    }
+
+    img {
+      height: 100%;
+    }
+
+    .read {
+      height: 5px;
+      background-color: $accent;
+      position: absolute;
+      bottom: 0;
+      transition: 300ms height;
     }
   }
 }

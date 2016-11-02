@@ -3,7 +3,6 @@
   <div class="books">
     <div class="row">
       {% for book in site.books %}
-      <div class="book-wrap col-md-4">
         <figure class="book">
           <a href="{{ book.link }}">
             <img class="book greyscale" src="{{ book.cover }}" alt="{{ book.name }}"
@@ -11,7 +10,6 @@
            </a>
           <div class="read" style="width: {{ book.progress }};"></div>
          </figure>
-      </div>
       {% endfor %}
     </div>
   </div>
