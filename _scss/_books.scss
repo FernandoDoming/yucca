@@ -1,0 +1,29 @@
+.books {
+  .book-wrap {
+    display: inline-block;
+
+    figure.book {
+      height: 200px;
+      margin-bottom: 10px;
+      position: relative;
+
+      &:hover {
+        .read {
+          height: 10px;
+        }
+      }
+
+      img {
+        height: 100%;
+      }
+
+      .read {
+        height: 5px;
+        background-color: $accent;
+        position: absolute;
+        bottom: 0;
+        transition: 300ms height;
+      }
+    }
+  }
+}

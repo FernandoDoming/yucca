@@ -5,10 +5,24 @@
 @import 'profile';
 @import 'sections';
 @import 'skills';
+@import 'books';
 
 body, html {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.greyscale {
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+  transition: filter 300ms, -webkit-filter 300ms, opacity 300ms;
+  opacity: .7;
+
+  &:hover {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+    opacity: 1;
+  }
 }
 
 .short-border {

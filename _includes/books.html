@@ -1,0 +1,16 @@
+<div class="section">
+  <h3>Books I've read</h3>
+  <div class="books">
+    <div class="row">
+      {% for book in site.books %}
+      <div class="book-wrap col-md-4">
+        <figure class="book">
+          <img class="book greyscale" src="{{ book.cover }}" alt="{{ book.name }}"
+               data-toggle="tooltip" data-placement="top" title="{{book.name }}" data-container="body">
+          <div class="read" style="width: {{ book.progress }};"></div>
+         </figure>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
