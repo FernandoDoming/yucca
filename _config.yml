@@ -151,15 +151,19 @@ books:
   - name: 'Practical malware analysis'
     cover: 'https://www.nostarch.com/sites/default/files/imagecache/product_full/practical_malware_analysis.png'
     progress: 70%
+    link: '#books'
   - name: "The antivirus hacker's handbook"
     cover: 'http://media.wiley.com/product_data/coverImage300/52/11190287/1119028752.jpg'
     progress: 100%
+    link: '#books'
   - name: 'The ruby programming language'
     cover: 'https://images-na.ssl-images-amazon.com/images/I/51i0hr6kccL._SX258_BO1,204,203,200_.jpg'
     progress: 50%
+    link: '#books'
   - name: 'Javascript: The good parts'
     cover: 'http://akamaicovers.oreilly.com/images/9780596517748/cat.gif'
     progress: 20%
+    link: '#books'
 
 defaults:
     -

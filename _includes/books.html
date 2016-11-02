@@ -1,12 +1,14 @@
-<div class="section">
+<div id="books" class="section">
   <h3>Books I've read</h3>
   <div class="books">
     <div class="row">
       {% for book in site.books %}
       <div class="book-wrap col-md-4">
         <figure class="book">
-          <img class="book greyscale" src="{{ book.cover }}" alt="{{ book.name }}"
-               data-toggle="tooltip" data-placement="top" title="{{book.name }}" data-container="body">
+          <a href="{{ book.link }}">
+            <img class="book greyscale" src="{{ book.cover }}" alt="{{ book.name }}"
+                 data-toggle="tooltip" data-placement="top" title="{{book.name }}" data-container="body">
+           </a>
           <div class="read" style="width: {{ book.progress }};"></div>
          </figure>
       </div>
