@@ -147,6 +147,20 @@ technologies:
   - name: 'PostgreSQL'
     icon: 'techs/postgres.png'
 
+certifications:
+  - name: 'My certification 1'
+    link: '#certifications'
+    issuer: 'Org 1'
+  - name: 'My certification 2'
+    link: '#certifications'
+    issuer: 'Org 1'
+  - name: 'My certification 3'
+    link: '#certifications'
+    issuer: 'Org 1'
+  - name: 'My certification 4'
+    link: '#certifications'
+    issuer: 'Org 1'
+
 books:
   - name: 'Practical malware analysis'
     cover: 'https://www.nostarch.com/sites/default/files/imagecache/product_full/practical_malware_analysis.png'

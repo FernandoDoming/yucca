@@ -10,7 +10,12 @@ profile: true
 </div>
 
 {% include skills.html %}
-{% include books.html %}
+{% if site.certifications %}
+  {% include certifications.html %}
+{% endif %}
+{% if site.books %}
+  {% include books.html %}
+{% endif %}
 
 {% if site.contact %}
   {% include contact.html %}
