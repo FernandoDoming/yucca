@@ -5,7 +5,7 @@
       {% for book in site.books %}
         <figure class="book">
           <a href="{{ book.link }}">
-            <img class="book greyscale" src="{{ book.cover }}" alt="{{ book.name }}"
+            <img class="book greyscale reveal" src="{{ book.cover }}" alt="{{ book.name }}"
                  data-toggle="tooltip" data-placement="top" title="{{book.name }}" data-container="body">
            </a>
           <div class="read" style="width: {{ book.progress }};"></div>
