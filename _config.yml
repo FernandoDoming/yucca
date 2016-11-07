@@ -146,6 +146,12 @@ technologies:
     icon: 'techs/nginx.png'
   - name: 'PostgreSQL'
     icon: 'techs/postgres.png'
+  - name: 'IDA disasm'
+    icon: 'techs/ida.png'
+  - name: 'OllyDbg'
+    icon: 'techs/ollydbg.png'
+  - name: 'Radare2'
+    icon: 'techs/r2.png'
 
 certifications:
   - name: 'My certification 1'
