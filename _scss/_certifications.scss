@@ -1,0 +1,39 @@
+.certifications {
+  .cert-wrapper {
+    display: inline-block;
+    margin-bottom: 15px;
+
+    .cert {
+      padding: 25px 0;
+      background-color: $muted;
+      text-align: center;
+      color: $mutedDark;
+      transition: box-shadow 300ms;
+
+      a {
+        color: $mutedDark;
+
+        &:hover {
+          text-decoration: none;
+        }
+
+        & > * {
+          margin-bottom: 20px;
+        }
+      }
+
+      .name {
+        font-family: 'Playfair Display';
+        font-size: 28px;
+      }
+
+      .zmdi {
+        font-size: 300%;
+      }
+
+      &:hover {
+        box-shadow: 0 0 30px rgba(33, 33, 33, 0.15);
+      }
+    }
+  }
+}

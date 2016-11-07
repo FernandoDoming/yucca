@@ -1,0 +1,45 @@
+<div id="experience" class="section">
+  <h3>Experience</h3>
+  <div class="experience">
+    <div class="row">
+
+      <section class="cd-horizontal-timeline">
+        <div class="timeline">
+          <div class="events-wrapper">
+            <div class="events">
+              <ol>
+                {% for event in site.experience %}
+                  <li>
+                    <a href="#0" data-date="{{ event.date }}" {% if forloop.index == 1 %} class="selected" {% endif %}>
+                      {{ event.date | date: '%d %b %Y' }}
+                    </a>
+                  </li>
+                {% endfor %}
+              </ol>
+
+              <span class="filling-line" aria-hidden="true"></span>
+            </div> <!-- .events -->
+          </div> <!-- .events-wrapper -->
+
+          <ul class="cd-timeline-navigation">
+            <li><a href="#0" class="prev inactive">Prev</a></li>
+            <li><a href="#0" class="next">Next</a></li>
+          </ul> <!-- .cd-timeline-navigation -->
+        </div> <!-- .timeline -->
+
+        <div class="events-content">
+          <ol>
+            {% for event in site.experience %}
+               <li {% if forloop.index == 1 %} class="selected" {% endif %} data-date="{{ event.date }}">
+                <h2>{{ event.title }}</h2>
+                <em>{{ event.date | date: '%A, %B %-d, %Y' }}</em>
+                <p>{{ event.description }}</p>
+              </li>
+            {% endfor %}
+          </ol>
+        </div> <!-- .events-content -->
+      </section>
+
+    </div>
+  </div>
+</div>

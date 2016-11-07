@@ -7,6 +7,7 @@
 @import 'skills';
 @import 'certifications';
 @import 'books';
+@import 'timeline';
 
 body, html {
   max-width: 1200px;
@@ -22,7 +23,7 @@ body, html {
   &:hover {
     -webkit-filter: grayscale(0);
     filter: grayscale(0);
-    opacity: 1;
+    opacity: 1 !important;
   }
 }
 

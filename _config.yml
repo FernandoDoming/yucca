@@ -65,6 +65,28 @@ profiles:
     url: 'http://example.com/blog'
     icon: edit
 
+experience:
+  - date: 12/02/2013
+    title: Test
+    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia,
+                  fugit recusandae ipsa, quia velit nulla adipisci?'
+  - date: 22/02/2014
+    title: Test 2
+    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia,
+                  fugit recusandae ipsa, quia velit nulla adipisci?'
+  - date: 05/08/2014
+    title: Test 3
+    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia,
+                  fugit recusandae ipsa, quia velit nulla adipisci?'
+  - date: 22/01/2015
+    title: Test 4
+    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia,
+                  fugit recusandae ipsa, quia velit nulla adipisci?'
+  - date: 25/03/2016
+    title: Test 4
+    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia,
+                  fugit recusandae ipsa, quia velit nulla adipisci?'
+
 # Skills
 skills:
   - name: 'Web Development'
