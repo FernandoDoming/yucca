@@ -32,6 +32,14 @@
   }
 }
 
+#languages, .skills {
+  h3, h4 {
+    font-weight: 500;
+    font-family: 'Scope One';
+    color: #6f6f6f;
+  }
+}
+
 @media (max-width: 768px) {
   .skill {
     width: 100%;

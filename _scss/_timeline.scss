@@ -268,7 +268,7 @@ Main Components
 
   h2 {
     font-weight: bold;
-    font-size: 34px;
+    font-size: 30px;
     font-family: $secondary-font;
     font-style: inherit;
     line-height: 1.2;
@@ -292,22 +292,6 @@ Main Components
   em, p {
     line-height: 1.6;
   }
-
-  @include MQ(M) {
-
-    h2 {
-      font-size: 34px;
-    }
-
-    em {
-      font-size: 16px;
-    }
-
-    p {
-      font-size: 1.8rem;
-    }
-  }
-
 }
 
 @include keyframes(cd-enter-right) {
