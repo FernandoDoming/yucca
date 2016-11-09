@@ -162,6 +162,8 @@ technologies:
     icon: 'techs/android.png'
   - name: 'Git'
     icon: 'techs/git.png'
+  - name: 'Jekyll.rb'
+    icon: 'techs/jekyll.png'
   - name: 'Unicorn'
     icon: 'techs/unicorn.png'
   - name: 'Nginx'
