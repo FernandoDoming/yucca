@@ -1,0 +1,39 @@
+.gallery {
+  figure {
+    margin: 5px;
+    width: calc(50% - 12px);
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+
+    @media (max-width: $break-phone) {
+      width: 100%;
+    }
+
+    .info {
+      width: calc(100% - 30px);
+      height: calc(100% - 30px);
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: opacity 300ms;
+      background-color: rgba($muted, .85);
+      color: darken($muted, 60%);
+      padding: 30px;
+      margin: 15px;
+      text-align: center;
+
+      .title {
+        font-weight: 700;
+        font-size: 20px;
+        letter-spacing: 1px;
+        margin-top: 38%;
+      }
+    }
+
+    &:hover .info {
+      opacity: 1;
+    }
+  }
+}

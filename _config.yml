@@ -177,6 +177,20 @@ technologies:
   - name: 'Radare2'
     icon: 'techs/r2.png'
 
+gallery:
+  - name: Lorem ipsum
+    src:  http://stephboreldesign.com/wp-content/uploads/2012/03/lorem-ipsum-logo.jpg
+  - name: Lorem ipsum
+    src:  http://stephboreldesign.com/wp-content/uploads/2012/03/lorem-ipsum-logo.jpg
+  - name: Lorem ipsum
+    src:  http://stephboreldesign.com/wp-content/uploads/2012/03/lorem-ipsum-logo.jpg
+  - name: Lorem ipsum
+    src:  http://stephboreldesign.com/wp-content/uploads/2012/03/lorem-ipsum-logo.jpg
+  - name: Lorem ipsum
+    src:  http://stephboreldesign.com/wp-content/uploads/2012/03/lorem-ipsum-logo.jpg
+  - name: Lorem ipsum
+    src:  http://stephboreldesign.com/wp-content/uploads/2012/03/lorem-ipsum-logo.jpg
+
 certifications:
   - name: 'My certification 1'
     link: '#certifications'

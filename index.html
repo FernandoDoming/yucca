@@ -9,10 +9,15 @@ profile: true
   {% markdown about.md %}
 </div>
 
-{% include experience.html %}
+{% if site.experience %}
+  {% include experience.html %}
+{% endif %}
 {% include skills.html %}
 {% if site.certifications %}
   {% include certifications.html %}
+{% endif %}
+{% if site.gallery %}
+  {% include gallery.html %}
 {% endif %}
 {% if site.books %}
   {% include books.html %}

@@ -2,12 +2,14 @@
 ---
 
 @import 'colors';
+@import 'dimens';
 @import 'profile';
 @import 'sections';
 @import 'skills';
 @import 'certifications';
 @import 'books';
 @import 'timeline';
+@import 'gallery';
 
 body, html {
   max-width: 1200px;

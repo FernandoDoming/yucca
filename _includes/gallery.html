@@ -1,0 +1,15 @@
+<div id="gallery" class="section">
+  <h3>Gallery</h3>
+  <div class="gallery">
+    <div class="row">
+      {% for img in site.gallery %}
+        <figure class="reveal">
+          <img src="{{ img.src }}" alt="{{ img.name }}">
+          <div class="info">
+            <div class="title">{{ img.name }}</div>
+          </div>
+        </figure>
+      {% endfor %}
+    </div>
+  </div>
+</div>
