@@ -179,17 +179,17 @@ technologies:
 
 gallery:
   - name: Lorem ipsum
-    src:  http://stephboreldesign.com/wp-content/uploads/2012/03/lorem-ipsum-logo.jpg
+    src:  https://images.unsplash.com/photo-1471070855862-324d571a1857?dpr=1&auto=format&fit=crop&w=800&h=600&q=80&cs=tinysrgb&crop=
   - name: Lorem ipsum
-    src:  http://stephboreldesign.com/wp-content/uploads/2012/03/lorem-ipsum-logo.jpg
+    src:  https://images.unsplash.com/photo-1452127308952-47a699216fc5?dpr=1&auto=format&fit=crop&w=400&h=400&q=80&cs=tinysrgb&crop=
   - name: Lorem ipsum
-    src:  http://stephboreldesign.com/wp-content/uploads/2012/03/lorem-ipsum-logo.jpg
+    src:  https://images.unsplash.com/photo-1467642511314-5699547ddf30?dpr=1&auto=format&fit=crop&w=400&h=600&q=80&cs=tinysrgb&crop=
   - name: Lorem ipsum
-    src:  http://stephboreldesign.com/wp-content/uploads/2012/03/lorem-ipsum-logo.jpg
+    src:  https://images.unsplash.com/photo-1414433473172-dc6afb63e4ba?dpr=1&auto=format&fit=crop&w=300&h=200&q=80&cs=tinysrgb&crop=
   - name: Lorem ipsum
-    src:  http://stephboreldesign.com/wp-content/uploads/2012/03/lorem-ipsum-logo.jpg
+    src:  https://images.unsplash.com/photo-1476231682828-37e571bc172f?dpr=1&auto=format&fit=crop&w=450&h=620&q=80&cs=tinysrgb&crop=
   - name: Lorem ipsum
-    src:  http://stephboreldesign.com/wp-content/uploads/2012/03/lorem-ipsum-logo.jpg
+    src:  https://images.unsplash.com/photo-1468224970805-92d72c619545?dpr=1&auto=format&fit=crop&w=580&h=400&q=80&cs=tinysrgb&crop=
 
 certifications:
   - name: 'My certification 1'

@@ -3,13 +3,24 @@
   <div class="gallery">
     <div class="row">
       {% for img in site.gallery %}
-        <figure class="reveal">
+        <figure class="">
           <img src="{{ img.src }}" alt="{{ img.name }}">
           <div class="info">
-            <div class="title">{{ img.name }}</div>
+            <div class="wrapper">
+              <div class="title">{{ img.name }}</div>
+            </div>
           </div>
         </figure>
       {% endfor %}
     </div>
   </div>
 </div>
+
+<script>
+$container = $('.gallery .row');
+$container.imagesLoaded(function () {
+  $container.masonry({
+    itemSelector: 'figure'
+  });
+});
+</script>
