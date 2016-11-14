@@ -4,10 +4,15 @@
     <div class="row">
       {% for img in site.gallery %}
         <figure class="">
-          <img src="{{ img.src }}" alt="{{ img.name }}">
+          <span class="img-wrapper">
+            <img src="{{ img.thumb }}" srcset="{{ img.src }} 500w" alt="{{ img.name }}">
+          </span>
           <div class="info">
             <div class="wrapper">
               <div class="title">{{ img.name }}</div>
+              <div class="description">
+                {{ img.description }}
+              </div>
             </div>
           </div>
         </figure>
@@ -22,5 +27,9 @@ $container.imagesLoaded(function () {
   $container.masonry({
     itemSelector: 'figure'
   });
+});
+
+$container.find('figure').on('click', function () {
+  $(this).toggleClass('open');
 });
 </script>

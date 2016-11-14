@@ -179,17 +179,26 @@ technologies:
 
 gallery:
   - name: Lorem ipsum
-    src:  https://images.unsplash.com/photo-1471070855862-324d571a1857?dpr=1&auto=format&fit=crop&w=800&h=600&q=80&cs=tinysrgb&crop=
+    thumb:  https://images.unsplash.com/photo-1471070855862-324d571a1857?dpr=1&auto=format&fit=crop&w=800&h=600&q=80&cs=tinysrgb&crop=
+    src:  https://images.unsplash.com/photo-1471070855862-324d571a1857?dpr=1&auto=format&fit=crop&w=1600&h=1200&q=80&cs=tinysrgb&crop=
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste amet eum eligendi
+                  ut officiis totam rem cum ducimus quam quisquam ipsum adipisci quaerat fugiat odio,
+                  doloremque tempora, reprehenderit accusantium quas."
   - name: Lorem ipsum
-    src:  https://images.unsplash.com/photo-1452127308952-47a699216fc5?dpr=1&auto=format&fit=crop&w=400&h=400&q=80&cs=tinysrgb&crop=
+    thumb:  https://images.unsplash.com/photo-1452127308952-47a699216fc5?dpr=1&auto=format&fit=crop&w=400&h=400&q=80&cs=tinysrgb&crop=
+    src:  https://images.unsplash.com/photo-1452127308952-47a699216fc5?dpr=1&auto=format&fit=crop&w=1200&h=1200&q=80&cs=tinysrgb&crop=
   - name: Lorem ipsum
-    src:  https://images.unsplash.com/photo-1467642511314-5699547ddf30?dpr=1&auto=format&fit=crop&w=400&h=600&q=80&cs=tinysrgb&crop=
+    thumb:  https://images.unsplash.com/photo-1467642511314-5699547ddf30?dpr=1&auto=format&fit=crop&w=400&h=600&q=80&cs=tinysrgb&crop=
+    src:  https://images.unsplash.com/photo-1467642511314-5699547ddf30?dpr=1&auto=format&fit=crop&w=800&h=1200&q=80&cs=tinysrgb&crop=
   - name: Lorem ipsum
-    src:  https://images.unsplash.com/photo-1414433473172-dc6afb63e4ba?dpr=1&auto=format&fit=crop&w=300&h=200&q=80&cs=tinysrgb&crop=
+    thumb:  https://images.unsplash.com/photo-1414433473172-dc6afb63e4ba?dpr=1&auto=format&fit=crop&w=300&h=200&q=80&cs=tinysrgb&crop=
+    src:  https://images.unsplash.com/photo-1414433473172-dc6afb63e4ba?dpr=1&auto=format&fit=crop&w=1200&h=800&q=80&cs=tinysrgb&crop=
   - name: Lorem ipsum
-    src:  https://images.unsplash.com/photo-1476231682828-37e571bc172f?dpr=1&auto=format&fit=crop&w=450&h=620&q=80&cs=tinysrgb&crop=
+    thumb:  https://images.unsplash.com/photo-1476231682828-37e571bc172f?dpr=1&auto=format&fit=crop&w=450&h=620&q=80&cs=tinysrgb&crop=
+    src:  https://images.unsplash.com/photo-1476231682828-37e571bc172f?dpr=1&auto=format&fit=crop&w=900&h=1240&q=80&cs=tinysrgb&crop=
   - name: Lorem ipsum
-    src:  https://images.unsplash.com/photo-1468224970805-92d72c619545?dpr=1&auto=format&fit=crop&w=580&h=400&q=80&cs=tinysrgb&crop=
+    thumb:  https://images.unsplash.com/photo-1468224970805-92d72c619545?dpr=1&auto=format&fit=crop&w=580&h=400&q=80&cs=tinysrgb&crop=
+    src:  https://images.unsplash.com/photo-1468224970805-92d72c619545?dpr=1&auto=format&fit=crop&w=1160&h=800&q=80&cs=tinysrgb&crop=
 
 certifications:
   - name: 'My certification 1'

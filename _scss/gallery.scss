@@ -4,10 +4,60 @@
     width: calc(50% - 10px);
     display: inline-block;
     position: relative;
-    cursor: pointer;
+    cursor: zoom-in;
+    transition: all 400ms;
 
     @media (max-width: $break-phone) {
       width: 100%;
+    }
+
+    &.open {
+      position: fixed !important;
+      top: 0 !important;
+      left: 0 !important;
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      z-index: 2;
+      cursor: zoom-out;
+      background-color: #333;
+
+      .img-wrapper {
+        height: 100%;
+        width: 75%;
+        display: inline-flex;
+        align-items: center;
+
+        img {
+          max-width: 100%;
+          max-height: 100%;
+          height: auto;
+          width: auto;
+          margin: auto;
+          box-shadow: 0 0 30px rgba(0, 0, 0, .4)
+        }
+      }
+
+      .wrapper {
+        display: inline-block;
+      }
+
+      .info {
+        padding: 20% 0;
+        float: right;
+        display: inline-block;
+        position: relative;
+        width: 25%;
+        height: 100%;
+        margin: 0;
+        opacity: 1;
+        background-color: #333;
+        color: lighten($muted, 30%);
+      }
+
+      .description {
+        display: block;
+      }
     }
 
     .wrapper {
@@ -38,6 +88,11 @@
         letter-spacing: 1px;
         width: 100%;
         text-transform: uppercase;
+      }
+
+      .description {
+        display: none;
+        text-align: justify;
       }
     }
 
