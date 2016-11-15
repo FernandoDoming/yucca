@@ -22,14 +22,14 @@
 </div>
 
 <script>
-$container = $('.gallery .row');
-$container.imagesLoaded(function () {
-  $container.masonry({
-    itemSelector: 'figure'
+  $container = $('.gallery .row');
+  $container.imagesLoaded(function () {
+    $container.masonry({
+      itemSelector: 'figure'
+    });
   });
-});
 
-$container.find('figure').on('click', function () {
-  $(this).toggleClass('open');
-});
+  $container.find('figure').on('click', function () {
+    $(this).toggleClass('open');
+  });
 </script>

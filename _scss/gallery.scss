@@ -5,7 +5,6 @@
     display: inline-block;
     position: relative;
     cursor: zoom-in;
-    transition: all 400ms;
 
     @media (max-width: $break-phone) {
       width: 100%;
@@ -21,6 +20,7 @@
       z-index: 2;
       cursor: zoom-out;
       background-color: #333;
+      animation: slide-in 400ms;
 
       .img-wrapper {
         height: 100%;
