@@ -18,9 +18,13 @@
       width: 100%;
       margin: 0;
       z-index: 2;
-      cursor: zoom-out;
       background-color: #333;
       animation: slide-in 400ms;
+      cursor: default;
+
+      .close {
+        display: inline-block;
+      }
 
       .img-wrapper {
         height: 100%;
@@ -64,6 +68,19 @@
           display: block;
         }
       }
+    }
+
+    .close {
+      display: none;
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-size: 34px;
+      padding: 15px 20px;
+      color: white;
+      font-weight: 100;
+      font-family: 'Roboto';
+      z-index: 1;
     }
 
     .wrapper {

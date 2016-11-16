@@ -4,6 +4,7 @@
     <div class="row">
       {% for img in site.gallery %}
         <figure class="">
+          <span class="close">&#10799;</span>
           <span class="img-wrapper">
             <img src="{{ img.thumb }}" srcset="{{ img.src }} 500w" alt="{{ img.name }}">
           </span>
@@ -30,6 +31,10 @@
   });
 
   $container.find('figure').on('click', function () {
-    $(this).toggleClass('open');
+    $(this).addClass('open');
+  });
+
+  $(document).on('click', 'figure.open .close', function () {
+    $(this).parent('figure.open').removeClass('open');
   });
 </script>
