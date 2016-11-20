@@ -178,6 +178,10 @@ technologies:
     icon: 'techs/r2.png'
 
 gallery:
+  - name: 'Yucca'
+    src: 'https://images.unsplash.com/photo-1476365518243-f738bf58443d?dpr=2&auto=format&fit=crop&w=500&h=800&q=80&cs=tinysrgb&crop='
+    description: 'Yucca is an awesome open-source jekyll theme.'
+    link: 'https://github.com/FernandoDoming/yucca'
   - name: Lorem ipsum
     thumb:  https://images.unsplash.com/photo-1471070855862-324d571a1857?dpr=1&auto=format&fit=crop&w=800&h=600&q=80&cs=tinysrgb&crop=
     src:  https://images.unsplash.com/photo-1471070855862-324d571a1857?dpr=1&auto=format&fit=crop&w=1600&h=1200&q=80&cs=tinysrgb&crop=

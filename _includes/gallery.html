@@ -6,14 +6,27 @@
         <figure class="">
           <span class="close">&#10799;</span>
           <span class="img-wrapper">
-            <img src="{{ img.thumb }}" srcset="{{ img.src }} 500w" alt="{{ img.name }}">
+            <img src="{% if img.thumb %}
+                        {{ img.thumb }}
+                      {% else %}
+                        {{ img.src }}
+                      {% endif%}"
+                 srcset="{{ img.src }} 500w" alt="{{ img.name }}">
           </span>
           <div class="info">
             <div class="wrapper">
-              <div class="title">{{ img.name }}</div>
+              <div style="width: 100%;">
+                <div class="title">{{ img.name }}</div>
+                <hr>
+              </div>
               <div class="description">
                 {{ img.description }}
               </div>
+              {% if img.link %}
+                <div>
+                  <a class="more-info" href="{{ img.link }}" target="_blank">Learn more</a>
+                </div>
+              {% endif %}
             </div>
           </div>
         </figure>
