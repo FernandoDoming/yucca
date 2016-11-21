@@ -25,7 +25,7 @@
     position: relative;
     cursor: zoom-in;
 
-    @media (max-width: $break-phone) {
+    @media (max-width: $break-phone-portrait) {
       width: 100%;
     }
 
@@ -51,6 +51,11 @@
         display: inline-flex;
         align-items: center;
 
+        @media (max-width: $break-phone-portrait) {
+          width: 100%;
+          height: 70%;
+        }
+
         img {
           max-width: 100%;
           max-height: 100%;
@@ -73,6 +78,12 @@
         opacity: 1;
         background-color: #333;
         color: lighten($muted, 30%);
+
+        @media (max-width: $break-phone-portrait) {
+          display: block;
+          width: 100%;
+          padding: 10px;
+        }
 
         hr {
           border-top-color: lighten($muted, 30%);
@@ -146,6 +157,10 @@
       hr {
         margin: 20px 35%;
         border-top: 2px solid darken($muted, 60%);
+
+        @media (max-width: $break-phone-portrait) {
+          margin: 10px 45%;
+        }
       }
 
       .description {
@@ -155,6 +170,10 @@
         font-family: 'Playfair Display';
         font-style: normal;
         font-size: 15px;
+
+        @media (max-width: $break-phone-portrait) {
+          margin: 0;
+        }
       }
 
       a.more-info {
