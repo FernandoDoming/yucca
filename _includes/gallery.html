@@ -1,37 +1,43 @@
 <div id="gallery" class="section">
   <h3>Gallery</h3>
   <div class="gallery">
-    <div class="row">
-      {% for img in site.gallery %}
-        <figure class="">
-          <span class="close">&#10799;</span>
-          <span class="img-wrapper">
-            <img src="{% if img.thumb %}
-                        {{ img.thumb }}
-                      {% else %}
-                        {{ img.src }}
-                      {% endif%}"
-                 srcset="{{ img.src }} 500w" alt="{{ img.name }}">
-          </span>
-          <div class="info">
-            <div class="wrapper">
-              <div style="width: 100%;">
-                <div class="title">{{ img.name }}</div>
-                <hr>
-              </div>
-              <div class="description">
-                {{ img.description }}
-              </div>
-              {% if img.link %}
-                <div>
-                  <a class="more-info" href="{{ img.link }}" target="_blank">Learn more</a>
-                </div>
-              {% endif %}
-            </div>
-          </div>
-        </figure>
-      {% endfor %}
-    </div>
+    {% for item in site.gallery %}
+      <div class="category-container">
+        <h4 class="category">{{ item.category }}</h4>
+        <hr>
+        <div class="row">
+          {% for img in item.images %}
+            <figure>
+              <span class="close">&#10799;</span>
+              <span class="img-wrapper">
+                <img src="{% if img.thumb %}
+                            {{ img.thumb }}
+                          {% else %}
+                            {{ img.src }}
+                          {% endif%}"
+                     srcset="{{ img.src }} 500w" alt="{{ img.name }}">
+              </span>
+              <div class="info">
+                <div class="wrapper">
+                  <div style="width: 100%;">
+                    <div class="title">{{ img.name }}</div>
+                    <hr>
+                  </div>
+                  <div class="description">
+                    {{ img.description }}
+                  </div>
+                  {% if img.link %}
+                    <div>
+                      <a class="more-info" href="{{ img.link }}" target="_blank">Learn more</a>
+                    </div>
+                  {% endif %}
+                </div> <!-- /.wrapper -->
+              </div> <!-- /.info -->
+            </figure>
+          {% endfor %}
+        </div> <!-- /.row -->
+      </div> <!-- /.category-container -->
+    {% endfor %}
   </div>
 </div>
 

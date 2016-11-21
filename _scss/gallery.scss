@@ -1,4 +1,23 @@
 .gallery {
+
+  .category-container:not(:first-child) {
+    margin-top: 25px;
+  }
+
+  .category {
+    font-family: 'Scope One';
+    font-weight: 500;
+    font-size: 22px;
+    text-align: center;
+    padding: 10px;
+    color: #989898;
+    margin: 0;
+
+    & + hr {
+      margin: 0 45% 30px 45%;
+    }
+  }
+
   figure {
     margin: 3px;
     width: calc(50% - 10px);
