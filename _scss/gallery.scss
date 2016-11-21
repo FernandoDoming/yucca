@@ -55,6 +55,10 @@
         background-color: #333;
         color: lighten($muted, 30%);
 
+        hr {
+          border-top-color: lighten($muted, 30%);
+        }
+
         .wrapper {
           display: inline-block;
           height: auto;
@@ -79,8 +83,8 @@
       position: absolute;
       top: 0;
       right: 0;
-      font-size: 34px;
-      padding: 15px 20px;
+      font-size: 40px;
+      padding: 0 20px;
       color: white;
       font-weight: 100;
       font-family: 'Roboto';
@@ -121,7 +125,7 @@
       }
 
       hr {
-        margin: 20px 25%;
+        margin: 20px 35%;
         border-top: 2px solid darken($muted, 60%);
       }
 
@@ -135,6 +139,7 @@
       }
 
       a.more-info {
+        margin-top: 10px;
         display: none;
         font-family: 'Roboto';
         font-weight: 700;
@@ -145,7 +150,7 @@
         transition: background-color 300ms;
 
         &:hover {
-          background-color: rgba(lighten($accent, 10%), .15);
+          background-color: rgba(lighten($accent, 20%), .15);
         }
       }
     }
