@@ -1,8 +1,14 @@
 <div id="gallery" class="section">
   <h3>Gallery</h3>
   <div class="gallery">
+    <ul class="categories">
+      <li class="active">All</li>
+      {% for item in site.gallery %}
+        <li>{{ item.category }}</li>
+      {% endfor %}
+    </ul>
     {% for item in site.gallery %}
-      <div class="category-container">
+      <div id="{{ item.category }}" class="category-container">
         <h4 class="category">{{ item.category }}</h4>
         <hr>
         <div class="row">
@@ -16,18 +22,5 @@
 </div>
 
 <script>
-  $container = $('.gallery .row');
-  $container.imagesLoaded(function () {
-    $container.masonry({
-      itemSelector: 'figure'
-    });
-  });
-
-  $container.find('figure').on('click', function () {
-    $(this).addClass('open');
-  });
-
-  $(document).on('click', 'figure.open .close', function () {
-    $(this).parent('figure.open').removeClass('open');
-  });
+ {% include gallery.js %}
 </script>
