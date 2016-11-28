@@ -1,40 +1,26 @@
 <div id="gallery" class="section">
   <h3>Gallery</h3>
   <div class="gallery">
-    <div class="row">
-      {% for img in site.gallery %}
-        <figure class="">
-          <span class="close">&#10799;</span>
-          <span class="img-wrapper">
-            <img src="{{ img.thumb }}" srcset="{{ img.src }} 500w" alt="{{ img.name }}">
-          </span>
-          <div class="info">
-            <div class="wrapper">
-              <div class="title">{{ img.name }}</div>
-              <div class="description">
-                {{ img.description }}
-              </div>
-            </div>
-          </div>
-        </figure>
+    <ul class="categories">
+      <li class="active">All</li>
+      {% for item in site.gallery %}
+        <li>{{ item.category }}</li>
       {% endfor %}
-    </div>
+    </ul>
+    {% for item in site.gallery %}
+      <div id="{{ item.category }}" class="category-container">
+        <h4 class="category">{{ item.category }}</h4>
+        <hr>
+        <div class="row">
+          {% for img in item.images %}
+            {% include image.html img=img %}
+          {% endfor %}
+        </div> <!-- /.row -->
+      </div> <!-- /.category-container -->
+    {% endfor %}
   </div>
 </div>
 
 <script>
-  $container = $('.gallery .row');
-  $container.imagesLoaded(function () {
-    $container.masonry({
-      itemSelector: 'figure'
-    });
-  });
-
-  $container.find('figure').on('click', function () {
-    $(this).addClass('open');
-  });
-
-  $(document).on('click', 'figure.open .close', function () {
-    $(this).parent('figure.open').removeClass('open');
-  });
+ {% include gallery.js %}
 </script>
