@@ -5,5 +5,5 @@
     end
   end
 
-  Greet.to visitor.name
+  Greet.to visitor
 {% endhighlight %}
